@@ -70,7 +70,6 @@ with open("union.txt", "w", encoding="utf-8") as union:
     for key, value in sorted_dict_txt.items():
         union.write(key + "\n")
         union.write(str(value) + "\n")
-        union.write('')
         with open(key, "rt", encoding="utf-8") as text:
             for string in text:
                 union.write(string)
